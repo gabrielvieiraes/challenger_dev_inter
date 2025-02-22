@@ -1,0 +1,20 @@
+.salas-container {
+  padding: 20px;
+  height: 85vh;
+}
+
+.form-sala {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-sala > * {
+  margin-top: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2%;
+  margin-top: 16px;
+}

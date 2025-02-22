@@ -1,0 +1,16 @@
+.agendamento-container {
+  padding: 20px;
+  height: 85vh;
+}
+
+.form-agendamento {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2%;
+  margin-top: 16px;
+}

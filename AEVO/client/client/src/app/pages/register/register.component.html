@@ -1,0 +1,60 @@
+<div class="container-register">
+  <mat-card class="register-card">
+    <h2>{{ "REGISTERPAGE.TITLE" | translate }}</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+      <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>{{ "REGISTERPAGE.EMAIL" | translate }}</mat-label>
+        <input matInput formControlName="email" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>{{ "REGISTERPAGE.NOME" | translate }}</mat-label>
+        <input matInput formControlName="nome" />
+      </mat-form-field>
+
+      <!-- <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>{{ "REGISTERPAGE.IDIOMA" | translate }}</mat-label>
+        <input matInput formControlName="idioma" />
+      </mat-form-field> -->
+      <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>{{ "REGISTERPAGE.IDIOMA" | translate }}</mat-label>
+        <mat-select formControlName="idioma" required>
+          <mat-option *ngFor="let idioma of locales" [value]="idioma.code">
+            {{ "REGISTERPAGE." + idioma.label | translate }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>{{ "REGISTERPAGE.FUSO" | translate }}</mat-label>
+        <input matInput formControlName="fusoHorario" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>{{ "REGISTERPAGE.SENHA" | translate }}</mat-label>
+        <input matInput type="password" formControlName="password" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>{{ "REGISTERPAGE.CONFIRMARSENHA" | translate }}</mat-label>
+        <input matInput type="password" formControlName="confirmPassword" />
+      </mat-form-field>
+
+      <button
+        class="register-button"
+        mat-flat-button
+        color="primary"
+        type="submit"
+        [disabled]="!registerForm.valid"
+      >
+        {{ "REGISTERPAGE.BUTTONTEXT" | translate }}
+      </button>
+
+      <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+    </form>
+
+    <a (click)="this.goToLogin()" class="register-link">
+      {{ "REGISTERPAGE.BUTTONREDIRECTLINK" | translate }}
+    </a>
+  </mat-card>
+</div>

@@ -1,0 +1,86 @@
+{
+  "TITLE": "📅 Room Scheduling",
+  "HOME": "Home",
+  "LOGIN": "Login",
+  "AGENDAMENTOS": "Appointments",
+  "SALAS": "Rooms",
+  "SAIR": "Log out",
+  "PORTUGUES": "Portuguese",
+  "ENGLISH": "English",
+  "HERO": {
+    "TITLE": "Book your room now!",
+    "DESCRIPTION": "Find the best room for your needs and book quickly.",
+    "BUTTONTEXT": "Schedule Now"
+  },
+  "FOOTER": "© 2025 Room Scheduling - All rights reserved",
+  "LOGINPAGE": {
+    "TITLE": "Log in to access your account",
+    "EMAIL": "E-mail",
+    "SENHA": "Password",
+    "BUTTONTEXT": "Sign in",
+    "BUTTONREGISTERTEXT": "Don't have an account? Sign up"
+  },
+  "REGISTERPAGE": {
+    "TITLE": "Account Registration",
+    "EMAIL": "E-mail",
+    "NOME": "Name",
+    "IDIOMA": "Language",
+    "OPTIONENUS": "English",
+    "OPTIONPTBR": "Portuguese",
+    "FUSO": "Time zone",
+    "SENHA": "Password",
+    "CONFIRMARSENHA": "Confirm Password",
+    "BUTTONTEXT": "Register",
+    "BUTTONREDIRECTLINK": "Already have an account? Log in here."
+  },
+  "AGENDAMENTOPAGE": {
+    "BUTTONADDTEXT": "Add Schedule",
+    "SALA": "Room",
+    "INICIO": "Start",
+    "FIM": "End",
+    "ACOES": "Actions",
+    "VAZIO": "No appointments found"
+  },
+  "CREATEORUPDATEAGENDAMENTOPAGE": {
+    "TITLEADICIONARAGENDAMENTO": "Add Schedule",
+    "TITLEEDITORAGENDAMENTO": "Edit Schedule",
+    "LABELSALA": "Room Name",
+    "LABELINICIO": "Start",
+    "LABELFIM": "End",
+    "BUTTONBACKTEXT": "Back",
+    "BUTTONSUBMITTEXT": "Save"
+  },
+  "MODALCONFIRMDIALOG": {
+    "TITLE": "Confirm Deletion",
+    "NAO": "No",
+    "SIM": "Yes",
+    "TEXT.": "Do you want to delete this room?",
+    "LABELINICIO": "Início",
+    "LABELFIM": "Fim"
+  },
+  "SALASPAGE": {
+    "TITLE": "Rooms",
+    "BUTTONADDTEXT": "Add room",
+    "CARREGANDOTEXT": "Loading...",
+    "LABELNOME": "Name",
+    "LABELDESCRICAO": "Description",
+    "LABELCAPACIDADE": "Capacity",
+    "LABELFUSO": "Time zone",
+    "LABELACOES": "Actions",
+    "EMPTYTABLE": "No rooms found"
+  },
+  "CREATEORUPDATESALAPAGE": {
+    "TITLEADICIONARSALA": "Add Room",
+    "TITLEEDITARSALA": "Edit Room",
+    "LABELNOME": "Name",
+    "ERRORINPUTNOME": "Name is required.",
+    "LABELDESCRICAO": "Description",
+    "LABELCAPACIDADE": "Capacity",
+    "ERROR1INPUTCAPACIDADE": "Capacity is mandatory.",
+    "ERROR2INPUTCAPACIDADE": "Capacity must be greater than 0.",
+    "LABELFUSO": "Time zone",
+    "ERRORINPUTLABEL": "Time zone is required.",
+    "BUTTONSUBMITTEXT": "Save",
+    "BUTTONBACKTEXT": "Back"
+  }
+}

@@ -1,0 +1,49 @@
+<div class="container-header" [class.is-mobile]="isMobile()">
+  <mat-toolbar class="toolbar" fxLayout="row" color="primary">
+    <h1 class="title">{{ "TITLE" | translate }}</h1>
+
+    <span class="spacer"></span>
+
+    <div class="box-flex-menu">
+      <button
+        (click)="this.redirect(item.path)"
+        mat-button
+        *ngFor="let item of menuItems"
+        fxHide.xs
+      >
+        <mat-icon class="mr">{{ item.icon }}</mat-icon>
+        {{ item.label | translate }}
+      </button>
+
+      <app-locale-switcher></app-locale-switcher>
+
+      <button mat-icon-button (click)="snav.toggle()" *ngIf="isMobile()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container
+    class="sidenav-container"
+    [style.marginTop.px]="isMobile() ? 56 : 0"
+  >
+    <mat-sidenav
+      #snav
+      class="drawer"
+      mode="over"
+      [fixedInViewport]="isMobile()"
+      fixedTopGap="56"
+    >
+      <mat-nav-list *ngFor="let item of menuItems">
+        <a href="{{ item.path }}" class="menu-item" mat-list-item>
+          <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+          {{ item.label | translate }}
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="content">
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

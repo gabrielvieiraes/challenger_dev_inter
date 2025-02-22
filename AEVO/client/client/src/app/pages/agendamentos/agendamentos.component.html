@@ -1,0 +1,64 @@
+<div class="agendamentos-container">
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="addAgendamento()"
+    class="add-btn"
+  >
+    {{ "AGENDAMENTOPAGE.BUTTONADDTEXT" | translate }}
+  </button>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="sala">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "AGENDAMENTOPAGE.SALA" | translate }}
+      </th>
+      <td mat-cell *matCellDef="let row">{{ row.sala.nome }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="inicio">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "AGENDAMENTOPAGE.INICIO" | translate }}
+      </th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.inicio | date : "dd/MM/yyyy HH:mm" }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="fim">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "AGENDAMENTOPAGE.FIM" | translate }}
+      </th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.fim | date : "dd/MM/yyyy HH:mm" }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "AGENDAMENTOPAGE.ACOES" | translate }}
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <button mat-icon-button (click)="editAgendamento(row.id)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          color="warn"
+          (click)="deleteAgendamento(row.id)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="5" style="text-align: center">
+        <strong>{{ "AGENDAMENTOPAGE.VAZIO" | translate }}</strong>
+      </td>
+    </tr>
+  </table>
+</div>

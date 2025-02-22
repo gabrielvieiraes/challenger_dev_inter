@@ -1,0 +1,59 @@
+<div class="agendamento-container">
+  <h2>{{ "CREATEORUPDATEAGENDAMENTOPAGE." + titulo | translate }}</h2>
+
+  <form
+    [formGroup]="agendamentoForm"
+    (ngSubmit)="salvarAgendamento()"
+    class="form-agendamento"
+  >
+    <mat-form-field appearance="fill">
+      <mat-label>{{
+        "CREATEORUPDATEAGENDAMENTOPAGE.LABELSALA" | translate
+      }}</mat-label>
+      <mat-select formControlName="salaId" [matTooltip]="'Selecione a sala'">
+        <mat-option *ngFor="let sala of salas" [value]="sala.id">
+          {{ sala.nome }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{
+        "CREATEORUPDATEAGENDAMENTOPAGE.LABELINICIO" | translate
+      }}</mat-label>
+      <input
+        matInput
+        formControlName="inicio"
+        [matTooltip]="'Defina a data e hora de início'"
+        type="datetime-local"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{
+        "CREATEORUPDATEAGENDAMENTOPAGE.LABELFIM" | translate
+      }}</mat-label>
+      <input
+        matInput
+        formControlName="fim"
+        [matTooltip]="'Defina a data e hora de fim'"
+        type="datetime-local"
+      />
+    </mat-form-field>
+
+    <div class="actions">
+      <button mat-raised-button type="button" (click)="voltar()">
+        {{ "CREATEORUPDATEAGENDAMENTOPAGE.BUTTONBACKTEXT" | translate }}
+      </button>
+
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="isLoading"
+      >
+        {{ "CREATEORUPDATEAGENDAMENTOPAGE.BUTTONSUBMITTEXT" | translate }}
+      </button>
+    </div>
+  </form>
+</div>

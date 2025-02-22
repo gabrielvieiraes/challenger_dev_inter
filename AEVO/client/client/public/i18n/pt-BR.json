@@ -1,0 +1,85 @@
+{
+  "TITLE": "📅 Agendamento de Salas",
+  "HOME": "Início",
+  "LOGIN": "Entrar",
+  "AGENDAMENTOS": "Agendamentos",
+  "SALAS": "Salas",
+  "SAIR": "Sair",
+  "PORTUGUES": "Português",
+  "ENGLISH": "Inglês",
+  "HERO": {
+    "TITLE": "Agende sua sala agora!",
+    "DESCRIPTION": "Encontre a melhor sala para suas necessidades e faça seu agendamento rapidamente.",
+    "BUTTONTEXT": "Agendar Agora"
+  },
+  "FOOTER": "© 2025 Agendamento de Salas - Todos os direitos reservados",
+  "LOGINPAGE": {
+    "TITLE": "Faça login para acessar sua conta",
+    "EMAIL": "Email",
+    "SENHA": "Senha",
+    "BUTTONTEXT": "Acessar",
+    "BUTTONREGISTERTEXT": "Não tem conta? Cadastre-se"
+  },
+  "REGISTERPAGE": {
+    "TITLE": "Cadastro de Conta",
+    "EMAIL": "Email",
+    "NOME": "Nome",
+    "IDIOMA": "Idioma",
+    "OPTIONENUS": "Inglês",
+    "OPTIONPTBR": "Português",
+    "FUSO": "Fuso Horário",
+    "SENHA": "Senha",
+    "CONFIRMARSENHA": "Confirmar Senha",
+    "BUTTONTEXT": "Cadastrar",
+    "BUTTONREDIRECTLINK": "Já tem uma conta? Faça login aqui."
+  },
+  "AGENDAMENTOPAGE": {
+    "BUTTONADDTEXT": "Adicionar Agendamento",
+    "SALA": "Sala",
+    "INICIO": "Início",
+    "FIM": "Fim",
+    "ACOES": "Ações",
+    "VAZIO": "Nenhum agendamento encontrada"
+  },
+  "CREATEORUPDATEAGENDAMENTOPAGE": {
+    "TITLEADICIONARAGENDAMENTO": "Adicionar Agendamento",
+    "TITLEEDITORAGENDAMENTO": "Editar Agendamento",
+    "LABELSALA": "Nome da Sala",
+    "LABELINICIO": "Início",
+    "LABELFIM": "Fim",
+    "BUTTONBACKTEXT": "Voltar",
+    "BUTTONSUBMITTEXT": "Salvar"
+  },
+  "MODALCONFIRMDIALOG": {
+    "TITLE": "Confirmar Exclusão",
+    "NAO": "Não",
+    "SIM": "Sim",
+    "TEXT": "Deseja excluir esta sala?",
+    "LABELFIM": "Fim"
+  },
+  "SALASPAGE": {
+    "TITLE": "Salas",
+    "BUTTONADDTEXT": "Adicionar sala",
+    "CARREGANDOTEXT": "Carregando...",
+    "LABELNOME": "Nome",
+    "LABELDESCRICAO": "Descrição",
+    "LABELCAPACIDADE": "Capacidade",
+    "LABELFUSO": "Fuso Horário",
+    "LABELACOES": "Ações",
+    "EMPTYTABLE": "Nenhuma sala encontrada"
+  },
+  "CREATEORUPDATESALAPAGE": {
+    "TITLEADICIONARSALA": "Adicionar Sala",
+    "TITLEEDITARSALA": "Editar Sala",
+    "LABELNOME": "Nome",
+    "ERRORINPUTNOME": "O nome é obrigatório.",
+    "LABELDESCRICAO": "Descrição",
+    "LABELCAPACIDADE": "Capacidade",
+    "ERROR1INPUTCAPACIDADE": "A capacidade é obrigatória.",
+    "ERROR2INPUTCAPACIDADE": "A capacidade deve ser maior que 0.",
+    "LABELFUSO": "Fuso Horário",
+    "ERRORINPUTLABEL": "O fuso horário é obrigatório.",
+    "BUTTONSUBMITTEXT": "Salvar",
+    "BUTTONBACKTEXT": "Voltar"
+  }
+}

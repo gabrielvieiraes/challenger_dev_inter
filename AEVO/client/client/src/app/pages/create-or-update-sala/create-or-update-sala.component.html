@@ -1,0 +1,59 @@
+<div class="salas-container">
+  <h2>{{ "CREATEORUPDATESALAPAGE." + titulo | translate }}</h2>
+
+  <form [formGroup]="salaForm" (ngSubmit)="onSubmit()" class="form-sala">
+    <mat-form-field appearance="fill">
+      <mat-label>{{
+        "CREATEORUPDATESALAPAGE.LABELNOME" | translate
+      }}</mat-label>
+      <input matInput formControlName="nome" />
+      <mat-error *ngIf="salaForm.get('nome')?.hasError('required')">
+        {{ "CREATEORUPDATESALAPAGE.ERRORINPUTNOME" | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{
+        "CREATEORUPDATESALAPAGE.LABELDESCRICAO" | translate
+      }}</mat-label>
+      <input matInput formControlName="descricao" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{
+        "CREATEORUPDATESALAPAGE.LABELCAPACIDADE" | translate
+      }}</mat-label>
+      <input matInput formControlName="capacidade" type="number" />
+      <mat-error *ngIf="salaForm.get('capacidade')?.hasError('required')">
+        {{ "CREATEORUPDATESALAPAGE.ERROR1INPUTCAPACIDADE" | translate }}
+      </mat-error>
+      <mat-error *ngIf="salaForm.get('capacidade')?.hasError('min')">
+        {{ "CREATEORUPDATESALAPAGE.ERROR2INPUTCAPACIDADE" | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{
+        "CREATEORUPDATESALAPAGE.LABELFUSO" | translate
+      }}</mat-label>
+      <input matInput formControlName="fusoHorario" />
+      <mat-error *ngIf="salaForm.get('fusoHorario')?.hasError('required')">
+        {{ "CREATEORUPDATESALAPAGE.ERRORINPUTLABEL" | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <div class="actions">
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="!salaForm.valid"
+      >
+        {{ "CREATEORUPDATESALAPAGE.BUTTONSUBMITTEXT" | translate }}
+      </button>
+      <button mat-raised-button type="button" (click)="onCancel()">
+        {{ "CREATEORUPDATESALAPAGE.BUTTONBACKTEXT" | translate }}
+      </button>
+    </div>
+  </form>
+</div>

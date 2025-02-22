@@ -1,0 +1,14 @@
+.salas-container {
+  padding: 20px;
+  height: 85vh;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mat-button-text{
+  font-size: 12px;
+}

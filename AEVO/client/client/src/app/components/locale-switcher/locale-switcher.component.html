@@ -1,0 +1,16 @@
+<div class="locale-switcher-box">
+  <mat-select
+    panelWidth="150px"
+    class="locale-switcher-select"
+    (selectionChange)="this.handleChangeLanguage($event.value)"
+    [(ngModel)]="activeLocale"
+  >
+    <mat-option
+      class="locale-switcher-select--option"
+      *ngFor="let locale of locales"
+      [value]="locale.code"
+    >
+      {{ locale.name | translate }}
+    </mat-option>
+  </mat-select>
+</div>

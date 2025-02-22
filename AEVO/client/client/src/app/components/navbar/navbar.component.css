@@ -1,0 +1,46 @@
+.container-header {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.is-mobile .toolbar {
+  position: fixed;
+  z-index: 2;
+}
+
+h1.title {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.sidenav-container {
+  flex: 1;
+}
+
+.is-mobile .sidenav-container {
+  flex: 1 0 auto;
+}
+
+.menu-item > .mdc-list-item__content > span {
+  display: flex;
+  align-items: center;
+}
+
+.drawer {
+  border-radius: 0;
+}
+
+.content {
+  background-color: #86c28b;
+}
+
+.box-flex-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

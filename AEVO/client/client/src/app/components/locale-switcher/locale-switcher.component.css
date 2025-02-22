@@ -1,0 +1,13 @@
+.locale-switcher-box {
+  display: flex;
+  align-items: center;
+}
+
+.locale-switcher-select {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.locale-switcher-select--option {
+  font-size: 14px;
+}
