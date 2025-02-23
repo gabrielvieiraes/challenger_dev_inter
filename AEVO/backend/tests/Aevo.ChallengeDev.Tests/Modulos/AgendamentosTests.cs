@@ -215,8 +215,8 @@ public class AgendamentosTests(IntegrationTestFactory factory) : TestBase(factor
 
     public static IEnumerable<object[]> GetCenariosDeConflito()
     {
-        var baseInicio = new DateTime(2025, 03, 15, 10, 00, 00);
-        var baseFim = new DateTime(2025, 03, 15, 10, 45, 00);
+        var baseInicio = new DateTime(2025, 03, 20, 10, 00, 00);
+        var baseFim = new DateTime(2025, 03, 20, 10, 45, 00);
 
         return new List<object[]>
         {
@@ -239,8 +239,8 @@ public class AgendamentosTests(IntegrationTestFactory factory) : TestBase(factor
 
         var criarRequest = new CriarAgendamento
         {
-            Inicio = new DateTime(2025, 03, 15, 10, 00, 00),
-            Fim = new DateTime(2025, 03, 15, 10, 45, 00),
+            Inicio = new DateTime(2025, 03, 20, 10, 00, 00),
+            Fim = new DateTime(2025, 03, 20, 10, 45, 00),
             SalaId = salaId,
             Timezone = UsuariosDeTestePredefinidos.JoaoSilva.FusoHorario,
             UsuarioId = UsuariosDeTestePredefinidos.JoaoSilva.Id
